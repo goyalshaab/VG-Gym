@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+VG GYM | Payment
+</title>
+
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body class="bg-light">
+
+
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<nav class="navbar navbar-dark bg-dark">
+
+
+<div class="container">
+
+
+<a href="index.html"
+class="navbar-brand fw-bold fs-2 text-warning">
+
+
+<i class="fa-solid fa-dumbbell"></i>
+
+VG GYM
+
+
+</a>
+
+
+
+<a href="dashboard.html"
+class="btn btn-warning">
+
+Dashboard
+
+</a>
+
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- ================= PAYMENT SECTION ================= -->
+
+
+<section class="py-5">
+
+
+<div class="container">
+
+
+
+<div class="text-center mb-5">
+
+
+<h1 class="display-4 fw-bold">
+
+Complete Your Membership
+
+</h1>
+
+
+<p>
+
+Secure payment for your VG GYM membership
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="row g-4">
+
+
+
+
+
+<!-- ORDER SUMMARY -->
+
+
+<div class="col-lg-5">
+
+
+
+<div class="card shadow border-0 rounded-4">
+
+
+<div class="card-header bg-warning">
+
+
+<h3 class="fw-bold">
+
+Order Summary
+
+</h3>
+
+
+</div>
+
+
+
+
+<div class="card-body">
+
+
+
+<div class="d-flex justify-content-between">
+
+
+<span>
+
+Membership Plan
+
+</span>
+
+
+<strong>
+
+Premium Plan
+
+</strong>
+
+
+</div>
+
+
+
+<hr>
+
+
+
+
+<div class="d-flex justify-content-between">
+
+
+<span>
+
+Duration
+
+</span>
+
+
+<strong>
+
+1 Month
+
+</strong>
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+<div class="d-flex justify-content-between">
+
+
+<span>
+
+Gym Access
+
+</span>
+
+
+<strong>
+
+Unlimited
+
+</strong>
+
+
+</div>
+
+
+
+<hr>
+
+
+
+
+<div class="d-flex justify-content-between fs-4">
+
+
+<span>
+
+Total Amount
+
+</span>
+
+
+<strong class="text-warning">
+
+$1,999
+
+</strong>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- BENEFITS -->
+
+
+<div class="card shadow border-0 rounded-4 mt-4">
+
+
+<div class="card-body">
+
+
+<h4>
+
+Premium Benefits
+
+</h4>
+
+
+
+<p>
+
+<i class="fa fa-check text-success"></i>
+
+Personal Trainer
+
+</p>
+
+
+
+<p>
+
+<i class="fa fa-check text-success"></i>
+
+Diet Consultation
+
+</p>
+
+
+
+<p>
+
+<i class="fa fa-check text-success"></i>
+
+Unlimited Workout
+
+</p>
+
+
+
+<p>
+
+<i class="fa fa-check text-success"></i>
+
+Progress Tracking
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- PAYMENT FORM -->
+
+
+<div class="col-lg-7">
+
+
+
+<div class="card shadow border-0 rounded-4">
+
+
+
+<div class="card-header bg-dark text-white">
+
+
+<h3>
+
+Payment Details
+
+</h3>
+
+
+</div>
+
+
+
+
+<div class="card-body p-4">
+
+
+
+
+
+
+<!-- PAYMENT METHODS -->
+
+
+<ul class="nav nav-pills mb-4">
+
+
+<li class="nav-item">
+
+<button class="nav-link active"
+data-bs-toggle="pill"
+data-bs-target="#upi">
+
+UPI
+
+</button>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<button class="nav-link"
+data-bs-toggle="pill"
+data-bs-target="#card">
+
+Card
+
+</button>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<button class="nav-link"
+data-bs-toggle="pill"
+data-bs-target="#netbank">
+
+Net Banking
+
+</button>
+
+</li>
+
+
+</ul>
+
+
+
+
+
+
+<div class="tab-content">
+
+
+
+
+
+
+<!-- UPI -->
+
+
+<div class="tab-pane fade show active"
+id="upi">
+
+
+<label class="form-label">
+
+UPI ID
+
+</label>
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="example@upi">
+
+
+
+<div class="text-center">
+
+
+<i class="fa-brands fa-google-pay fa-4x text-primary"></i>
+
+<i class="fa-brands fa-cc-paypal fa-4x ms-3"></i>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CARD -->
+
+
+<div class="tab-pane fade"
+id="card">
+
+
+<label>
+
+Card Holder Name
+
+</label>
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="Name on card">
+
+
+
+<label>
+
+Card Number
+
+</label>
+
+
+<input type="number"
+class="form-control mb-3"
+placeholder="XXXX XXXX XXXX XXXX">
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6">
+
+
+<input type="text"
+class="form-control"
+placeholder="Expiry Date">
+
+
+</div>
+
+
+
+<div class="col-md-6">
+
+
+<input type="password"
+class="form-control"
+placeholder="CVV">
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- NET BANKING -->
+
+
+<div class="tab-pane fade"
+id="netbank">
+
+
+<select class="form-control">
+
+
+<option>
+
+Select Bank
+
+</option>
+
+
+<option>
+
+State Bank Of India
+
+</option>
+
+
+<option>
+
+HDFC Bank
+
+</option>
+
+
+<option>
+
+ICICI Bank
+
+</option>
+
+
+<option>
+
+Axis Bank
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+<!-- BILLING -->
+
+
+<h4 class="mb-3">
+
+Billing Information
+
+</h4>
+
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="Full Name">
+
+
+
+<input type="email"
+class="form-control mb-3"
+placeholder="Email Address">
+
+
+
+<input type="tel"
+class="form-control mb-3"
+placeholder="Mobile Number">
+
+
+
+
+
+
+
+<!-- PAY BUTTON -->
+
+
+<a href="dashboard.html"
+class="btn btn-warning btn-lg w-100 fw-bold">
+
+
+<i class="fa fa-lock"></i>
+
+Pay $1,999 Securely
+
+
+</a>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= SECURITY ================= -->
+
+
+<section class="py-4 bg-dark">
+
+
+<div class="container text-center text-white">
+
+
+<h3>
+
+<i class="fa fa-shield-alt text-warning"></i>
+
+100% Secure Payment
+
+</h3>
+
+
+<p>
+
+Your payment information is protected.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer class="bg-black text-white py-4 text-center">
+
+
+<h2 class="text-warning">
+
+VG GYM
+
+</h2>
+
+
+<p>
+
+Train Hard | Stay Strong | Never Quit
+
+</p>
+
+
+<p>
+
+© 2026 VG GYM
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

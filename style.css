@@ -1,0 +1,3012 @@
+/* =====================================================
+   VG GYM WEBSITE
+   PREMIUM FITNESS WEBSITE CSS
+   PART 1
+===================================================== */
+
+
+/* ================= ROOT VARIABLES ================= */
+
+:root {
+
+    --primary-color: #ffc107;
+    --dark-color: #000000;
+    --dark-light: #111111;
+    --white-color: #ffffff;
+    --gray-color: #777;
+
+    --transition: all 0.4s ease;
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+/* ================= RESET ================= */
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+body {
+
+    font-family:
+    'Arial',
+    sans-serif;
+
+    overflow-x:hidden;
+
+    color:#222;
+
+    background:#fff;
+
+}
+
+
+img {
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+a {
+
+    text-decoration:none;
+
+}
+
+
+ul {
+
+    list-style:none;
+
+}
+
+
+/* ================= GLOBAL HEADING ================= */
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    font-weight:800;
+
+}
+
+
+p {
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+
+/* ================= CUSTOM SCROLLBAR ================= */
+
+
+::-webkit-scrollbar {
+
+    width:12px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:#111;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:#ffc107;
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:#e0a800;
+
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar {
+
+    padding:15px 0;
+
+    transition:var(--transition);
+
+}
+
+
+.navbar-brand {
+
+    letter-spacing:1px;
+
+}
+
+
+.navbar-brand i {
+
+    color:var(--primary-color);
+
+}
+
+
+.navbar-nav .nav-link {
+
+    color:white;
+
+    font-weight:600;
+
+    margin:0 8px;
+
+    position:relative;
+
+    transition:var(--transition);
+
+}
+
+
+.navbar-nav .nav-link:hover {
+
+    color:var(--primary-color);
+
+}
+
+
+.navbar-nav .nav-link::after {
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:3px;
+
+    background:var(--primary-color);
+
+    left:0;
+
+    bottom:-5px;
+
+    transition:var(--transition);
+
+}
+
+
+.navbar-nav .nav-link:hover::after {
+
+    width:100%;
+
+}
+
+
+
+.navbar-toggler {
+
+    border:1px solid var(--primary-color);
+
+}
+
+
+.navbar-toggler-icon {
+
+    filter:
+    brightness(0)
+    invert(1);
+
+}
+
+
+/* ================= BUTTONS ================= */
+
+
+.btn-warning {
+
+    background:var(--primary-color);
+
+    border:none;
+
+    color:#000;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+
+.btn-warning:hover {
+
+    background:#000;
+
+    color:#ffc107;
+
+    transform:translateY(-5px);
+
+}
+
+
+.btn-outline-light {
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+
+.btn-outline-light:hover {
+
+    background:var(--primary-color);
+
+    border-color:var(--primary-color);
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ================= HERO SECTION ================= */
+
+
+.hero-section {
+
+    min-height:100vh;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.85)
+    ),
+
+    url("../images/gym-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+}
+
+
+.hero-section h1 {
+
+    font-size:90px;
+
+    color:white;
+
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+}
+
+
+.hero-section h3 {
+
+    font-size:32px;
+
+}
+
+
+.hero-section p {
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+
+
+.hero-img {
+
+    animation:
+    floating 4s ease-in-out infinite;
+
+    filter:
+    drop-shadow(
+    0 20px 40px rgba(255,193,7,.4)
+    );
+
+}
+
+
+
+/* ================= HERO ANIMATION ================= */
+
+
+@keyframes floating {
+
+
+    0% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-25px);
+
+    }
+
+
+    100% {
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+/* ================= SECTION TITLE ================= */
+
+
+section {
+
+    position:relative;
+
+}
+
+
+.section-title {
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-title h2 {
+
+    font-size:45px;
+
+}
+
+
+.section-title span {
+
+    color:var(--primary-color);
+
+}
+
+
+
+/* ================= STAT SECTION ================= */
+
+
+.bg-dark {
+
+    background:#050505!important;
+
+}
+
+
+.counter {
+
+    font-size:45px;
+
+    font-weight:900;
+
+}
+
+
+.card {
+
+    transition:var(--transition);
+
+    overflow:hidden;
+
+}
+
+
+.card:hover {
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+
+/* ================= FEATURE CARDS ================= */
+
+
+.feature-card {
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+.feature-card i {
+
+    color:var(--primary-color);
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+
+.feature-card h4 {
+
+    margin-bottom:15px;
+
+}
+
+
+.feature-card p {
+
+    color:#666;
+
+}
+
+
+
+/* ================= IMAGE HOVER ================= */
+
+
+.card img {
+
+    transition:
+    transform .5s ease;
+
+}
+
+
+.card:hover img {
+
+    transform:
+    scale(1.08);
+
+}
+
+
+
+/* ================= BADGE ================= */
+
+
+.badge {
+
+    letter-spacing:1px;
+
+    border-radius:30px;
+
+}
+
+
+
+/* ================= FADE ANIMATION ================= */
+
+
+.fade-up {
+
+    animation:
+    fadeUp 1s ease;
+
+}
+
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+        opacity:0;
+
+        transform:
+        translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+
+}
+
+
+/* ================= MOBILE NAVBAR ================= */
+
+
+@media(max-width:991px){
+
+
+.navbar-nav {
+
+    background:#000;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+
+.navbar-nav .nav-link {
+
+    padding:10px;
+
+}
+
+
+}
+
+
+
+/* ================= HERO RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+
+.hero-section {
+
+    background-attachment:
+    scroll;
+
+}
+
+
+.hero-section h1 {
+
+    font-size:55px;
+
+}
+
+
+.hero-section h3 {
+
+    font-size:22px;
+
+}
+
+
+.hero-section p {
+
+    font-size:16px;
+
+}
+
+
+.hero-img {
+
+    margin-top:40px;
+
+}
+
+
+}
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+
+@media(max-width:480px){
+
+
+.hero-section h1 {
+
+    font-size:42px;
+
+}
+
+
+.btn {
+
+    width:100%;
+
+    margin-bottom:15px;
+
+}
+
+
+}
+/* =====================================================
+   VG GYM WEBSITE
+   STYLE.CSS PART 2
+
+   ABOUT
+   PROGRAMS
+   MEMBERSHIP
+   CTA
+   GLASS EFFECTS
+===================================================== */
+
+
+/* ================= ABOUT SECTION ================= */
+
+
+#about {
+
+    background:#f8f9fa;
+
+}
+
+
+#about img {
+
+    border-radius:25px;
+
+    transition:var(--transition);
+
+}
+
+
+#about img:hover {
+
+    transform:
+    scale(1.05);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+
+}
+
+
+#about h2 {
+
+    font-size:48px;
+
+    line-height:1.2;
+
+}
+
+
+#about p {
+
+    font-size:17px;
+
+}
+
+
+#about .fa-check-circle {
+
+    transition:var(--transition);
+
+}
+
+
+#about .d-flex:hover .fa-check-circle {
+
+    transform:
+    rotate(360deg);
+
+    color:#000!important;
+
+}
+
+
+#about h5 {
+
+    margin-bottom:5px;
+
+}
+
+
+
+/* ================= PROGRAM SECTION ================= */
+
+
+.program-section {
+
+    background:#050505;
+
+}
+
+
+.program-section .card {
+
+
+    background:#111;
+
+    color:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.program-section .card img {
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+
+
+.program-section .card-body {
+
+    padding:35px;
+
+}
+
+
+
+.program-section .card h3 {
+
+    font-size:28px;
+
+    margin:20px 0;
+
+}
+
+
+.program-section .card p {
+
+    color:#ccc;
+
+}
+
+
+.program-section .card i {
+
+    transition:
+    transform .5s ease;
+
+}
+
+
+
+.program-section .card:hover i {
+
+    transform:
+    rotateY(360deg)
+    scale(1.2);
+
+}
+
+
+
+/* ================= PROGRAM CARD HOVER ================= */
+
+
+.program-section .card:hover {
+
+    transform:
+
+    translateY(-15px);
+
+    border:
+
+    1px solid #ffc107;
+
+    box-shadow:
+
+    0 20px 50px
+    rgba(255,193,7,.25);
+
+}
+
+
+
+.program-section .btn-outline-warning {
+
+    border-width:2px;
+
+    font-weight:bold;
+
+}
+
+
+.program-section .btn-outline-warning:hover {
+
+    background:#ffc107;
+
+    color:#000;
+
+}
+
+
+
+/* ================= MEMBERSHIP SECTION ================= */
+
+
+#pricing {
+
+    background:
+
+    linear-gradient(
+    180deg,
+    #ffffff,
+    #f4f4f4
+    );
+
+}
+
+
+
+#pricing .card {
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+#pricing .card-header {
+
+    padding:30px;
+
+    border:none;
+
+}
+
+
+
+#pricing .card-header h2 {
+
+    font-size:35px;
+
+}
+
+
+
+#pricing .card-body {
+
+    padding:40px 30px;
+
+}
+
+
+
+#pricing h1 {
+
+    font-size:60px;
+
+}
+
+
+#pricing p {
+
+    font-size:16px;
+
+}
+
+
+
+/* ================= PRICE FEATURE LIST ================= */
+
+
+#pricing .fa-check {
+
+    font-size:18px;
+
+}
+
+
+#pricing .fa-times {
+
+    font-size:18px;
+
+}
+
+
+
+/* ================= PREMIUM PLAN ================= */
+
+
+#pricing .border-warning {
+
+
+    transform:
+
+    scale(1.08);
+
+    z-index:2;
+
+    box-shadow:
+
+    0 25px 60px
+    rgba(255,193,7,.35);
+
+}
+
+
+
+#pricing .border-warning::before {
+
+
+    content:"MOST POPULAR";
+
+
+    position:absolute;
+
+
+    top:20px;
+
+
+    right:-45px;
+
+
+    background:#000;
+
+
+    color:#ffc107;
+
+
+    padding:8px 50px;
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+
+    transform:
+
+    rotate(45deg);
+
+
+}
+
+
+
+/* ================= PRICE CARD HOVER ================= */
+
+
+#pricing .card:hover {
+
+
+    transform:
+
+    translateY(-15px);
+
+
+    box-shadow:
+
+    0 30px 70px
+    rgba(0,0,0,.25);
+
+
+}
+
+
+#pricing .border-warning:hover {
+
+
+    transform:
+
+    scale(1.1)
+    translateY(-15px);
+
+
+}
+
+
+
+/* ================= GLASSMORPHISM CARD ================= */
+
+
+.glass-card {
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:
+
+    blur(15px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(15px);
+
+
+    border:
+
+    1px solid
+    rgba(255,255,255,.2);
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+/* ================= CTA SECTION ================= */
+
+
+.bg-warning {
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #ffc107,
+
+    #ff9800
+
+    )!important;
+
+
+}
+
+
+
+.bg-warning h2 {
+
+
+    font-size:45px;
+
+
+}
+
+
+
+.bg-warning p {
+
+
+    color:#111;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+.bg-warning .btn-dark {
+
+
+    padding:
+
+    15px 45px;
+
+
+    border-radius:
+
+    50px;
+
+
+    font-weight:
+
+    800;
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+.bg-warning .btn-dark:hover {
+
+
+    background:#fff;
+
+
+    color:#000;
+
+
+    transform:
+
+    translateY(-8px);
+
+
+}
+
+
+
+/* ================= ADVANCED HOVER EFFECTS ================= */
+
+
+
+.hover-box {
+
+
+    transition:
+
+    all .5s ease;
+
+
+}
+
+
+
+.hover-box:hover {
+
+
+    transform:
+
+    translateY(-20px)
+    rotateX(5deg);
+
+
+}
+
+
+
+/* Shine Animation */
+
+
+.shine {
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.shine::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-100%;
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,255,255,.5),
+
+    transparent
+
+    );
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.shine:hover::after {
+
+
+    left:100%;
+
+
+}
+
+
+
+/* ================= PREMIUM GOLD BORDER ================= */
+
+
+.gold-border {
+
+
+    border:
+
+    2px solid transparent;
+
+
+    background:
+
+    linear-gradient(#111,#111)
+    padding-box,
+
+
+    linear-gradient(
+
+    45deg,
+
+    #ffc107,
+
+    #fff
+
+    )
+    border-box;
+
+
+}
+
+
+
+/* ================= BUTTON GLOW ================= */
+
+
+.btn-glow {
+
+
+    box-shadow:
+
+    0 0 20px
+    rgba(255,193,7,.5);
+
+
+}
+
+
+.btn-glow:hover {
+
+
+    box-shadow:
+
+    0 0 40px
+    rgba(255,193,7,.9);
+
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:991px){
+
+
+#pricing .border-warning {
+
+
+    transform:
+
+    scale(1);
+
+
+}
+
+
+#pricing .border-warning:hover {
+
+
+    transform:
+
+    translateY(-10px);
+
+
+}
+
+
+
+#about h2 {
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.bg-warning h2 {
+
+
+    font-size:35px;
+
+
+}
+
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+#pricing h1 {
+
+
+    font-size:45px;
+
+
+}
+
+
+
+.program-section .card-body {
+
+
+    padding:25px;
+
+
+}
+
+
+
+}
+/* =====================================================
+   VG GYM WEBSITE
+   STYLE.CSS PART 3
+
+   TRAINERS
+   BMI
+   CLASSES
+   GALLERY
+   TESTIMONIALS
+   FAQ
+   CONTACT
+===================================================== */
+
+
+/* ================= TRAINERS SECTION ================= */
+
+
+#trainers {
+
+    background:#050505;
+
+}
+
+
+#trainers .card {
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background:#fff;
+
+}
+
+
+#trainers .card img {
+
+    height:350px;
+
+    object-fit:cover;
+
+}
+
+
+#trainers .card-body {
+
+    padding:30px;
+
+}
+
+
+#trainers h4 {
+
+    font-size:28px;
+
+}
+
+
+#trainers .text-warning {
+
+    font-weight:700;
+
+}
+
+
+#trainers .card:hover {
+
+    transform:
+
+    translateY(-15px);
+
+    box-shadow:
+
+    0 25px 60px
+    rgba(255,193,7,.35);
+
+}
+
+
+
+#trainers .card:hover img {
+
+    transform:
+
+    scale(1.1);
+
+}
+
+
+
+#trainers a {
+
+    transition:.3s;
+
+}
+
+
+#trainers a:hover {
+
+    color:#ffc107!important;
+
+    transform:
+
+    translateY(-5px);
+
+}
+
+
+
+/* ================= BMI SECTION ================= */
+
+
+#bmi {
+
+    background:#f8f9fa;
+
+}
+
+
+
+#bmi img {
+
+    border-radius:30px;
+
+    box-shadow:
+
+    0 20px 50px
+    rgba(0,0,0,.2);
+
+}
+
+
+
+#bmi h2 {
+
+    font-size:45px;
+
+}
+
+
+
+#bmi .form-control {
+
+
+    height:55px;
+
+
+    border-radius:10px;
+
+
+    border:2px solid #ddd;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+#bmi .form-control:focus {
+
+
+    border-color:#ffc107;
+
+
+    box-shadow:
+
+    0 0 15px
+    rgba(255,193,7,.4);
+
+
+}
+
+
+
+#result {
+
+
+    color:#ffc107;
+
+    font-weight:800;
+
+}
+
+
+
+/* BMI RESULT CARD */
+
+
+.bmi-result {
+
+
+    background:#000;
+
+
+    color:white;
+
+
+    padding:20px;
+
+
+    border-radius:20px;
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+/* ================= CLASS SCHEDULE ================= */
+
+
+.table {
+
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+
+
+.table thead {
+
+
+    background:#000;
+
+
+    color:#ffc107;
+
+
+}
+
+
+
+.table th {
+
+
+    padding:20px;
+
+    font-size:18px;
+
+
+}
+
+
+
+.table td {
+
+
+    padding:18px;
+
+    font-weight:600;
+
+
+}
+
+
+
+.table tbody tr {
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.table tbody tr:hover {
+
+
+    background:#ffc107;
+
+
+    color:#000;
+
+
+    transform:
+
+    scale(1.02);
+
+
+}
+
+
+
+/* ================= GALLERY SECTION ================= */
+
+
+
+.gallery-item {
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+.gallery-item img {
+
+
+    height:300px;
+
+
+    width:100%;
+
+
+    object-fit:cover;
+
+
+    transition:
+
+    transform .6s ease;
+
+
+}
+
+
+
+.gallery-item::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+    rgba(255,193,7,.7);
+
+
+    opacity:0;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.gallery-item:hover::after {
+
+
+    opacity:1;
+
+
+}
+
+
+
+.gallery-item:hover img {
+
+
+    transform:
+
+    scale(1.15);
+
+
+}
+
+
+
+/* Gallery Zoom Icon */
+
+
+.gallery-item i {
+
+
+    position:absolute;
+
+
+    top:50%;
+
+
+    left:50%;
+
+
+    transform:
+
+    translate(-50%,-50%);
+
+
+    color:#000;
+
+
+    font-size:45px;
+
+
+    opacity:0;
+
+
+    z-index:2;
+
+
+}
+
+
+
+.gallery-item:hover i {
+
+
+    opacity:1;
+
+
+}
+
+
+
+/* ================= TESTIMONIAL SECTION ================= */
+
+
+
+#testimonials {
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #fff,
+
+    #eee
+
+    );
+
+
+}
+
+
+
+#testimonials .card {
+
+
+    border-radius:30px;
+
+
+}
+
+
+
+#testimonials img {
+
+
+    border:
+
+    5px solid #ffc107;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+#testimonials p {
+
+
+    font-size:20px;
+
+
+    font-style:italic;
+
+
+}
+
+
+
+.carousel-control-prev-icon,
+
+.carousel-control-next-icon {
+
+
+    background-color:#000;
+
+
+    border-radius:50%;
+
+
+    padding:25px;
+
+
+}
+
+
+
+/* ================= FAQ SECTION ================= */
+
+
+
+.accordion-item {
+
+
+    border:none;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:15px!important;
+
+
+    overflow:hidden;
+
+
+    box-shadow:
+
+    0 10px 30px
+    rgba(0,0,0,.1);
+
+
+}
+
+
+
+.accordion-button {
+
+
+    font-size:18px;
+
+
+    font-weight:700;
+
+
+    padding:20px;
+
+
+}
+
+
+
+.accordion-button:not(.collapsed) {
+
+
+    background:#ffc107;
+
+
+    color:#000;
+
+
+}
+
+
+
+.accordion-button:focus {
+
+
+    box-shadow:none;
+
+
+}
+
+
+
+.accordion-body {
+
+
+    padding:25px;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+/* ================= CONTACT SECTION ================= */
+
+
+.contact-section {
+
+
+    background:#050505;
+
+
+}
+
+
+
+.contact-section .form-control {
+
+
+    background:#111;
+
+
+    border:
+
+    1px solid #333;
+
+
+    color:white;
+
+
+    height:55px;
+
+
+}
+
+
+
+.contact-section textarea {
+
+
+    height:150px!important;
+
+
+}
+
+
+
+.contact-section .form-control::placeholder {
+
+
+    color:#aaa;
+
+
+}
+
+
+
+.contact-section .form-control:focus {
+
+
+    border-color:#ffc107;
+
+
+    box-shadow:
+
+    0 0 20px
+    rgba(255,193,7,.3);
+
+
+}
+
+
+
+.contact-section iframe {
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+/* ================= FLOATING EFFECT ================= */
+
+
+.float-animation {
+
+
+    animation:
+
+    floatBox 3s infinite;
+
+
+}
+
+
+
+@keyframes floatBox {
+
+
+    0% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-15px);
+
+    }
+
+
+    100% {
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:991px){
+
+
+#trainers .card img {
+
+
+    height:300px;
+
+
+}
+
+
+
+#bmi h2 {
+
+
+    font-size:35px;
+
+
+}
+
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+#trainers .card img {
+
+
+    height:250px;
+
+
+}
+
+
+
+#testimonials p {
+
+
+    font-size:16px;
+
+
+}
+
+
+
+.table {
+
+
+    font-size:14px;
+
+
+}
+
+
+
+}
+/* =====================================================
+   VG GYM WEBSITE
+   STYLE.CSS PART 4 FINAL
+
+   FOOTER
+   NEWSLETTER
+   BUTTONS
+   LOADER
+   PREMIUM EFFECTS
+   RESPONSIVE
+===================================================== */
+
+
+/* ================= FOOTER ================= */
+
+
+footer {
+
+    background:#000;
+
+    color:white;
+
+}
+
+
+footer h2 {
+
+    font-size:40px;
+
+    font-weight:900;
+
+}
+
+
+
+footer h4 {
+
+    color:#ffc107;
+
+    margin-bottom:25px;
+
+}
+
+
+
+footer p {
+
+    color:#ccc;
+
+}
+
+
+
+footer ul li {
+
+    margin-bottom:12px;
+
+}
+
+
+
+footer ul li a {
+
+    color:#ddd!important;
+
+    transition:.3s;
+
+}
+
+
+
+footer ul li a:hover {
+
+
+    color:#ffc107!important;
+
+
+    padding-left:10px;
+
+
+}
+
+
+
+footer .fab {
+
+
+    transition:.4s;
+
+
+}
+
+
+
+footer .fab:hover {
+
+
+    color:white;
+
+
+    transform:
+
+    translateY(-8px)
+    scale(1.2);
+
+
+}
+
+
+
+/* Footer Bottom */
+
+
+footer hr {
+
+
+    border-color:#333;
+
+
+}
+
+
+
+footer .text-center {
+
+
+    color:#aaa;
+
+
+}
+
+
+
+
+
+/* ================= NEWSLETTER ================= */
+
+
+.newsletter {
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #ffc107,
+
+    #ff9800
+
+    );
+
+
+}
+
+
+
+.newsletter input {
+
+
+    height:60px;
+
+
+    border-radius:
+
+    50px 0 0 50px;
+
+
+    border:none;
+
+
+    padding-left:25px;
+
+
+}
+
+
+
+.newsletter button {
+
+
+    border-radius:
+
+    0 50px 50px 0;
+
+
+    padding:0 35px;
+
+
+    font-weight:800;
+
+
+}
+
+
+
+.newsletter input:focus {
+
+
+    box-shadow:
+
+    none;
+
+
+}
+
+
+
+/* ================= BACK TO TOP BUTTON ================= */
+
+
+#topBtn {
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    z-index:999;
+
+
+    box-shadow:
+
+
+    0 10px 30px
+    rgba(255,193,7,.5);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+#topBtn:hover {
+
+
+    transform:
+
+    translateY(-10px)
+    rotate(360deg);
+
+
+}
+
+
+
+/* ================= WHATSAPP BUTTON ================= */
+
+
+.whatsapp-btn {
+
+
+    position:fixed;
+
+
+    bottom:25px;
+
+
+    left:25px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    font-size:32px;
+
+
+    z-index:999;
+
+
+    box-shadow:
+
+
+    0 10px 30px
+    rgba(0,0,0,.3);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.whatsapp-btn:hover {
+
+
+    transform:
+
+    scale(1.15)
+    rotate(10deg);
+
+
+    color:white;
+
+
+}
+
+
+
+/* ================= MODAL DESIGN ================= */
+
+
+.modal-content {
+
+
+    border-radius:25px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.modal-header {
+
+
+    background:#000;
+
+
+    color:#ffc107;
+
+
+}
+
+
+
+.modal-body {
+
+
+    padding:35px;
+
+
+}
+
+
+
+.modal-body .form-control {
+
+
+    height:55px;
+
+
+    border-radius:12px;
+
+
+}
+
+
+
+/* ================= LOADING ANIMATION ================= */
+
+
+.loader {
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:#000;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    z-index:9999;
+
+
+}
+
+
+
+.loader span {
+
+
+    width:70px;
+
+
+    height:70px;
+
+
+    border-radius:50%;
+
+
+    border:
+
+    8px solid #333;
+
+
+    border-top-color:#ffc107;
+
+
+    animation:
+
+    spin 1s linear infinite;
+
+
+}
+
+
+
+@keyframes spin {
+
+
+    from {
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+/* ================= IMAGE OVERLAY ================= */
+
+
+.image-overlay {
+
+
+    position:relative;
+
+
+}
+
+
+
+.image-overlay::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,.6),
+
+    rgba(0,0,0,.6)
+
+    );
+
+
+}
+
+
+
+/* ================= GLOW TEXT ================= */
+
+
+.gold-text {
+
+
+    color:#ffc107;
+
+
+    text-shadow:
+
+
+    0 0 15px
+    rgba(255,193,7,.8);
+
+
+}
+
+
+
+/* ================= PREMIUM BOX SHADOW ================= */
+
+
+.premium-shadow {
+
+
+    box-shadow:
+
+
+    0 20px 60px
+    rgba(0,0,0,.3);
+
+
+}
+
+
+
+/* ================= IMAGE ZOOM EFFECT ================= */
+
+
+.zoom-effect {
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.zoom-effect img {
+
+
+    transition:
+
+    transform .6s ease;
+
+
+}
+
+
+
+.zoom-effect:hover img {
+
+
+    transform:
+
+    scale(1.15);
+
+
+}
+
+
+
+/* ================= PREMIUM HOVER BORDER ================= */
+
+
+.border-hover {
+
+
+    position:relative;
+
+
+}
+
+
+
+.border-hover::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    border:
+
+    2px solid #ffc107;
+
+
+    border-radius:20px;
+
+
+    transform:
+
+    scale(0);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.border-hover:hover::before {
+
+
+    transform:
+
+    scale(1);
+
+
+}
+
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+
+
+footer {
+
+
+    text-align:center;
+
+
+}
+
+
+
+footer .row > div {
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+.newsletter input {
+
+
+    border-radius:
+
+    50px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.newsletter button {
+
+
+    width:100%;
+
+
+    border-radius:
+
+    50px;
+
+
+    height:55px;
+
+
+}
+
+
+
+#topBtn {
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+}
+
+
+
+.whatsapp-btn {
+
+
+    width:50px;
+
+
+    height:50px;
+
+
+    font-size:25px;
+
+
+}
+
+
+}
+
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+
+@media(max-width:480px){
+
+
+h1 {
+
+
+    font-size:35px!important;
+
+
+}
+
+
+
+h2 {
+
+
+    font-size:30px!important;
+
+
+}
+
+
+
+p {
+
+
+    font-size:15px;
+
+
+}
+
+
+
+.card {
+
+
+    border-radius:15px;
+
+
+}
+
+
+
+.btn {
+
+
+    padding:12px 20px;
+
+
+}
+
+
+
+}
+
+
+
+/* ================= DARK BODY SUPPORT ================= */
+
+
+.dark-mode {
+
+
+    background:#111;
+
+
+    color:white;
+
+
+}
+
+
+
+.dark-mode .card {
+
+
+    background:#1c1c1c;
+
+
+    color:white;
+
+
+}
+
+
+
+.dark-mode p {
+
+
+    color:#ccc;
+
+
+}
+
+
+
+/* ================= END OF VG GYM CSS ================= */
