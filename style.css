@@ -500,6 +500,7 @@ section {
 
     transition:
     transform .5s ease;
+   aspect ratio:1/1
 
 }
 
