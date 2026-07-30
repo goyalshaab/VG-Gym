@@ -500,7 +500,7 @@ section {
 
     transition:
     transform .5s ease;
-   aspect ratio:1/1
+   
 
 }
 
@@ -1442,7 +1442,7 @@ section {
 
 #trainers .card img {
 
-    height:350px;
+    height:250px;
 
     object-fit:cover;
 
@@ -1719,7 +1719,7 @@ section {
 .gallery-item img {
 
 
-    height:300px;
+    height:250px;
 
 
     width:100%;
@@ -3024,7 +3024,7 @@ img {
 
     height:auto;
 
-    aspect-ratio:16 / 9;
+    aspect-ratio:1 / 1;
 
     object-fit:cover;
 
@@ -3037,7 +3037,7 @@ img {
 
 .hero-img {
 
-    aspect-ratio:4 / 3;
+    aspect-ratio:1 / 1;
 
     object-fit:cover;
 
@@ -3063,7 +3063,7 @@ img {
 
 .program-section .card img {
 
-    aspect-ratio:16 / 9;
+    aspect-ratio:1 / 1;
 
     object-fit:cover;
 
@@ -3076,7 +3076,7 @@ img {
 
 #trainers .card img {
 
-    aspect-ratio:3 / 4;
+    aspect-ratio:1 / 1;
 
     object-fit:cover;
 
