@@ -3008,6 +3008,214 @@ p {
 
 }
 
+   /* =====================================================
+   VG GYM WEBSITE
+   IMAGE ASPECT RATIO CONTROL
+   ALL WEBSITE IMAGES
+===================================================== */
+
+
+/* ================= GLOBAL IMAGE RATIO ================= */
+
+
+img {
+
+    width:100%;
+
+    height:auto;
+
+    aspect-ratio:16 / 9;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= HERO IMAGE ================= */
+
+
+.hero-img {
+
+    aspect-ratio:4 / 3;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= ABOUT SECTION IMAGE ================= */
+
+
+#about img {
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= PROGRAM CARDS IMAGES ================= */
+
+
+.program-section .card img {
+
+    aspect-ratio:16 / 9;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= TRAINER IMAGES ================= */
+
+
+#trainers .card img {
+
+    aspect-ratio:3 / 4;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= GALLERY IMAGES ================= */
+
+
+.gallery-item img {
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= TESTIMONIAL PROFILE IMAGES ================= */
+
+
+#testimonials img {
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+
+
+/* ================= BLOG / NEWS IMAGES ================= */
+
+
+.blog-card img,
+.news-card img {
+
+    aspect-ratio:16 / 9;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ================= FOOTER LOGO ================= */
+
+
+footer img {
+
+    aspect-ratio:auto;
+
+    object-fit:contain;
+
+}
+
+
+
+/* ================= RESPONSIVE IMAGE RATIO ================= */
+
+
+@media(max-width:768px){
+
+
+    img {
+
+        aspect-ratio:4 / 3;
+
+    }
+
+
+    .gallery-item img {
+
+        aspect-ratio:1 / 1;
+
+    }
+
+
+    #trainers .card img {
+
+        aspect-ratio:1 / 1;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    img {
+
+        aspect-ratio:1 / 1;
+
+    }
+
+
+    .hero-img {
+
+        aspect-ratio:1 / 1;
+
+    }
+
+
+}
+
+
+/* ================= IMAGE QUALITY FIX ================= */
+
+
+img {
+
+    image-rendering:auto;
+
+    object-position:center;
+
+}
+
+
+
+/* ================= PREVENT IMAGE BREAK ================= */
+
+
+.card img,
+.gallery-item img,
+.hero-img {
+
+    display:block;
+
+    overflow:hidden;
+
+}
+
 
 
 /* ================= END OF VG GYM CSS ================= */
